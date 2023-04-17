@@ -15,7 +15,10 @@
 .fa-eye{
     color: rgb(48,180,255);
 }
-
+.sas{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
 .search-container{
 display: flex;
 margin-bottom: 10px;

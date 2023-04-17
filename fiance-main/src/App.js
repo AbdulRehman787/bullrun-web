@@ -16,7 +16,6 @@ const App =()=> {
   return (
     <>
     <Routes>
-
     <Route path="/" exact element={ <MainHome /> } /> 
     <Route path="/Component/Pages/MainHome" exact element={ <MainHome /> } /> 
     <Route path="/Pages/Blog" element={ <Blog/> } />

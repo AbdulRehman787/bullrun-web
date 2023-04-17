@@ -13,7 +13,7 @@ const Chart = () => {
           <IbmChart />
             </div>
           </div>
-          <div className="col">
+          <div className="col sas">
             <div className="card">
               <div className="card-body">
                 <h2><i className="fa-solid fa-clock"></i> Watch List</h2>
@@ -21,7 +21,7 @@ const Chart = () => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col sas">
             <div className="card">
 
               <div className="card-body">

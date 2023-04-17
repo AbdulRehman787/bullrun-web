@@ -9,9 +9,11 @@ const CoinInfo = () => {
   const [data, setData] = useState([])
   const [filters, setFilters] = useState(data)
   useEffect(() => {
+   
     axios.get('http://localhost:4500/register')
       .then(res => setData(res.data))
       .catch(err => console.log(err));
+
   }, [])
 
   const filterItem = (category) => {
