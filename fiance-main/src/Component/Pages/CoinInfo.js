@@ -52,7 +52,7 @@ const CoinInfo = () => {
         <button className='btns1' onClick={() => filterItem("MSFT")}>MSFT</button>
         <button className='btns1' onClick={() => filterItem("NEO")}>NEO</button>
         <button className='btns1' onClick={() => filterItem("TESLA")}>TESLA</button>
-        <StockTips filters={filters} />
+        <StockTips filters={filters} /> 
 
 
       </div>

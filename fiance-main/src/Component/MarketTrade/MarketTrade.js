@@ -5,7 +5,7 @@ import DowApi from './../StockApi/DowApi';
 import GoodApi from './../StockApi/GoodApi';
 import MsftApi from './../StockApi/MsftApi'; 
 import TeslaApi from './../StockApi/TeslaApi';
-import axios from 'axios';
+
 import Neo from '../StockApi/Neo'
 
 const MarketTrade = () => {

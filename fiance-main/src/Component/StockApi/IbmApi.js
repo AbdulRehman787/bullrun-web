@@ -111,10 +111,10 @@ class IbmApi extends React.Component {
             <td className="tds5" id="actualprice2">{curelem.actualprice}</td>
             <td className="tds6" id="price2">{curelem.price}</td>
             <td>
-            <label className="switch">
-            <input type="checkbox" />
-            <span className="slider"></span>
-            </label>
+            <label class="switch">
+  <input type="checkbox" checked />
+  <span class="slider round"></span>
+</label>
           </td>
           <td>
           <label className="switch">

@@ -12,12 +12,12 @@ import Admin from "./Component/Admin/Admin";
 import MainHome from "./Component/Pages/MainHome";
 import Home from "./Component/Pages/Home";
 import CoinInfo from "./Component/Pages/CoinInfo";
-import Homes from "./website/Homes.js";
 const App =()=> {
   return (
     <>
     <Routes>
-    <Route path="/" exact element={ <Homes /> } />
+
+    <Route path="/" exact element={ <MainHome /> } /> 
     <Route path="/Component/Pages/MainHome" exact element={ <MainHome /> } /> 
     <Route path="/Pages/Blog" element={ <Blog/> } />
     <Route path="/Pages/AlternativePick" element={ <AlternativePick/> } />

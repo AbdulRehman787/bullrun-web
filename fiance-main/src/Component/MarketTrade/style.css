@@ -12,6 +12,7 @@ thead {
   height: 40px;
   line-height: 40px;
   color: #fff;
+  border: 1px solid rgb(48, 210, 255);
 }
 table{
   padding: 10px 5px !important;
