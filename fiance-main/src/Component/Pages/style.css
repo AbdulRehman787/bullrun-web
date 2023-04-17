@@ -22,7 +22,20 @@
     font-weight: 300;
     font-size: 22px;
 }
+.btns1{
+    padding: 6px 12px;
+    background-image: linear-gradient(to left, rgb(45,210,255) , rgb(45,180,255));
+    color: #000;
+    font-size: 14;
+    font-weight: 300;
+    border: none;
+    margin-right: 10px;
+}
+.btns1:hover{
+    background-image: linear-gradient(to left, rgb(45,180,255) , rgb(45,210,255));
+    color: #fff;
 
+}
 .text p {
     color: #ccc;
 }

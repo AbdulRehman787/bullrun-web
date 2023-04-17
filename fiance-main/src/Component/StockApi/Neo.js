@@ -14,7 +14,7 @@ const RealData=[
     }
 ]
 
-class NioApi extends React.Component {
+class Neo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -124,4 +124,4 @@ class NioApi extends React.Component {
   }
 }
 
-export default NioApi;
+export default Neo;

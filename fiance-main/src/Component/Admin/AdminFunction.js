@@ -26,6 +26,7 @@ const AdminFunction = () => {
                     <option >DOW</option>
                     <option >GOOD</option>
                     <option >MSFT</option>
+                    <option >NEO</option>
                     <option >TESLA</option>
                     </select>
                     </div>
