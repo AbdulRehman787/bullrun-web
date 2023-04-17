@@ -1,0 +1,308 @@
+* {
+    font-family: "Poppins";
+}
+.d-fle{
+    display: flex !important;
+}
+.blog-det {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+.text h2 {
+    color: rgb(48, 180, 255);
+}
+
+.text h4 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.text p {
+    color: #ccc;
+}
+
+.btns {
+    padding: 8px 16px;
+    background-color: #ccc;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #000;
+
+}
+
+.top-coin {
+    width: 97%;
+    padding: 0px 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 6px;
+}
+
+.top-coin p {
+    color: gray;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.coin-details {
+    width: 85%;
+    padding: 10px;
+    margin-left: 220px;
+}
+
+.coin-det {
+    justify-content: space-between;
+}
+
+.coin-det h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}
+
+.coin-det p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.coin-info {
+    width: 90%;
+    justify-content: space-between;
+    padding: 5px 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+.details {
+    color: #9b9b9b;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.details-api {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.iconz {
+    margin: 0 auto;
+}
+
+.sq {
+    border: none !important;
+}
+
+.card {
+    padding: 10px 20px;
+}
+
+h3 {
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    color: #718096 !important;
+    font-family: Poppins !important;
+}
+
+h3 p {
+    font-size: 0.875rem;
+    margin-left: auto;
+    font-weight: 400;
+    color: #a0aec0;
+}
+
+.card {
+    border: none !important;
+}
+
+hr {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+#profitprice {
+    color: green;
+}
+
+.card-des {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.name {
+    font-size: 34px;
+    font-weight: 600;
+    font-family: lato;
+}
+
+.cols {
+    width: 35%;
+    height: 550px;
+}
+
+.col-des {
+    width: 67%;
+    margin-left: -30px;
+    height: 550px;
+}
+
+.dypnamicdata {
+    text-align: right;
+}
+
+.more-text {
+    width: 96%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+
+}
+
+.ibm {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-left: -20px;
+
+}
+
+.title {
+   font-size: 32px !important;
+   font-weight: 500 !important;
+
+}
+
+.contain {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #718096;
+    display: block;
+}
+
+.para {
+    text-align: justify;
+}
+
+.more-text p {
+    text-align: justify;
+
+}
+
+.row-design {
+    margin-left: -10px;
+}
+
+.div {
+    margin-left: 200px;
+}
+
+.admin-details {
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 200px auto !important;
+}
+
+.tips-btn {
+    padding: 8px 20px;
+    border: none;
+    background-image: linear-gradient(to right, rgb(48, 210, 255), rgb(48, 180, 255));
+    color: #fff;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.tips-btn:hover {
+    background-image: linear-gradient(to left, rgb(48, 210, 255), rgb(48, 180, 255));
+    color: #000;
+}
+
+.table-container {
+    margin-left: 150px;
+    width: 92%;
+    display: none;
+}
+
+#table-container {
+    width: auto;
+}
+.icons {
+    border: none;
+    padding: 0px 4px;
+    border-radius: 5px;
+    color: red;
+    text-align: center;
+    border: 1px solid red;
+}
+.icons:hover {
+    background-color: red;
+    color: #fff;
+}
+.func {
+    display: flex;
+    width: 88%;
+    margin-left: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .blog-det {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-left: 80px;
+
+    }
+
+    .top-coin {
+        margin-left: -150px;
+    }
+
+    .row-design {
+        margin-left: -180px;
+    }
+
+    .ss {
+        width: 75%;
+    }
+}
+
+.tips_table{
+    width: 100%;
+}
+.tip1{
+    width: 100px;
+    padding: 0px 0px 0px 15px;                                                                                              
+}
+.tip2{
+    width: 80px;
+}
+.tip3{
+    width: auto;
+}
+.tips1text{
+    padding: 0px 0px 0px 20px;
+}
+.tipsrow{
+    border: 1px solid #ccc;
+}

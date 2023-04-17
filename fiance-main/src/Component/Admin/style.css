@@ -1,0 +1,60 @@
+.admin-container{
+    width: 88%;
+    margin-left: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.add-tips{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+    width: 88%;
+}
+.date{
+    margin: 0px 20px 0px -200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #fb503b;
+    color: #fb503b;
+}
+.add-tips input:focus{
+    border-color: #9900ff;
+}
+.btns{
+    padding: 8px 16px;
+    border: none;
+    margin-left: 20px;
+}
+.tips-container{
+
+    text-align: left;
+    margin-left: 50px;
+}
+.tipadmin{
+    text-align: justify;
+}
+textarea{
+    padding: 5px;
+}
+@media screen and (max-width: 800px) {
+    .admin-container{
+        margin-left: 0px;
+    }
+    .add-tips{
+        display: block;
+    }
+    .dropdown{
+        margin: 0px auto;
+    }
+    .tips-container{
+        margin-left: 75px;
+    }
+}
+
+.section-des{
+    padding: 6px;
+}
