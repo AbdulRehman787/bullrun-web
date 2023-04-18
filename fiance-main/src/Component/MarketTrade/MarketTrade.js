@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import IbmApi from '../StockApi/IbmApi';
 import './style.css';
 import DowApi from './../StockApi/DowApi';
