@@ -14,55 +14,55 @@ const Testimonial = () => {
                 In each of these cases, the pain is reprimanded in pleasure
               </p>
             </div>
-            <div class="row test-func row-cols-1 row-cols-md-3 g-5">
+            <div className="row test-func row-cols-1 row-cols-md-3 g-5">
 
-              <div class="col">
-                <div class="card card-bor card-testmonial ">
-                  <i class="fa-solid fa-quote-left"></i>
-                  <div class="card-body">
-                    <p class="card-text">Duis aute irure dolor in repre hen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <div className="col">
+                <div className="card card-bor card-testmonial ">
+                  <i className="fa-solid fa-quote-left"></i>
+                  <div className="card-body">
+                    <p className="card-text">Duis aute irure dolor in repre hen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                   </div>
                   <div className="card-body d-flex">
                     <div className='client-img'>
                       <img src="/image/3.jpg" className='client-img' width="50px" alt="" />
                     </div>
                     <div>
-                      <h5 class="card-title">David Parker</h5>
-                      <p class="card-text">Chart Expert</p>
+                      <h5 className="card-title">David Parker</h5>
+                      <p className="card-text">Chart Expert</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card card-bor card-testmonial">
-                  <i class="fa-solid fa-quote-left"></i>
-                  <div class="card-body">
-                    <p class="card-text">Duis aute irure dolor in repre hen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <div className="col">
+                <div className="card card-bor card-testmonial">
+                  <i className="fa-solid fa-quote-left"></i>
+                  <div className="card-body">
+                    <p className="card-text">Duis aute irure dolor in repre hen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                   </div>
                   <div className="card-body d-flex">
                     <div className='client-img'>
                       <img src="/image/4.jpg" className='client-img' width="50px" alt="" />
                     </div>
                     <div>
-                      <h5 class="card-title">Julia Parker</h5>
-                      <p class="card-text">Stocks Expert</p>
+                      <h5 className="card-title">Julia Parker</h5>
+                      <p className="card-text">Stocks Expert</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card card-bor card-testmonial">
-                  <i class="fa-solid fa-quote-left"></i>
-                  <div class="card-body">
-                    <p class="card-text">Duis aute irure dolor in repre hen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <div className="col">
+                <div className="card card-bor card-testmonial">
+                  <i className="fa-solid fa-quote-left"></i>
+                  <div className="card-body">
+                    <p className="card-text">Duis aute irure dolor in repre hen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
                   </div>
                   <div className="card-body d-flex">
                     <div className='client-img'>
                       <img src="/image/5.jpg" className='client-img' width="50px" alt="" />
                     </div>
                     <div>
-                      <h5 class="card-title">Russel Parker</h5>
-                      <p class="card-text">Trading Expert</p>
+                      <h5 className="card-title">Russel Parker</h5>
+                      <p className="card-text">Trading Expert</p>
                     </div>
                   </div>
                 </div>

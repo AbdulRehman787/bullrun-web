@@ -590,6 +590,7 @@ h6 {
 .devman_tm_header.animate {
     padding: 25px 0px;
     background-color: #fff;
+    color: #000;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -2939,7 +2940,7 @@ h6 {
     transition: all 0.3s ease;
 }
 
-.devman_tm_news ul li .image:hover .main {
+.devman_tm_news ul li .image .main :hover  {
     transform: scale(1.1) translateZ(0);
 }
 
@@ -3006,9 +3007,11 @@ h6 {
     opacity: 0;
     min-width: 100%;
 }
-
+.card-bodyes {
+    margin: 0px;
+}
 .devman_tm_modalbox .news_popup_informations .image .main {
-    position: absolute;
+    position: relative;
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -3017,6 +3020,9 @@ h6 {
     background-size: cover;
     background-position: center;
     border-radius: 12px;
+    height: 200px;
+    margin: -30px 0px;
+   
 }
 
 .devman_tm_modalbox .news_popup_informations .details {
@@ -4331,9 +4337,11 @@ h6 {
 }
 
 .package-list {
-    margin-left: 20px;
+    list-style: disc;
 }
-
+.devman_tm_news ul li .image img :hover{
+    transform: matrix();
+}
 .package-para {
     font-size: 14px;
     font-weight: 400;

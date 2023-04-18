@@ -120,7 +120,7 @@ const Contact = () => {
                   <li>
                     <div className="list_inner">
                       <div className="icon">
-                      <i class="fa-solid fa-location-dot"></i>
+                      <i className="fa-solid fa-location-dot"></i>
                       </div>
                       <div className="short">
                         <h3>Address</h3>
@@ -131,7 +131,7 @@ const Contact = () => {
                   <li>
                     <div className="list_inner">
                       <div className="icon">
-                      <i class="fa-solid fa-envelope"></i>
+                      <i className="fa-solid fa-envelope"></i>
                       </div>
                       <div className="short">
                         <h3>Email</h3>
@@ -144,7 +144,7 @@ const Contact = () => {
                   <li>
                     <div className="list_inner">
                       <div className="icon">
-                      <i class="fa-solid fa-phone"></i>
+                      <i className="fa-solid fa-phone"></i>
                       </div>
                       <div className="short">
                         <h3>Phone</h3>

@@ -15,8 +15,8 @@ const Chart = () => {
           </div>
           <div className="col sas">
             <div className="card">
-              <div className="card-body">
-                <h2><i className="fa-solid fa-clock"></i> Watch List</h2>
+              <div className="card-bodyes">
+                <h5><i className="fa-solid fa-clock"></i> Watch List</h5>
                 <ReChart />
               </div>
             </div>
@@ -24,8 +24,8 @@ const Chart = () => {
           <div className="col sas">
             <div className="card">
 
-              <div className="card-body">
-                <h2><i className="fa-solid fa-eye"></i> My PotFolio</h2>
+              <div className="card-bodyes">
+                <h5><i className="fa-solid fa-eye"></i> My PotFolio</h5>
                 <ReChart />
               </div>
             </div>

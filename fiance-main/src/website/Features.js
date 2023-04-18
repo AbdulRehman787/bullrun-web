@@ -28,15 +28,15 @@ const Features = () => {
       <div className="devman_tm_features">
         <div className="container">
           <div className="features_list">
-          <div class="row  row-dei  row-cols-1 row-cols-md-6 g-4">
+          <div className="row  row-dei  row-cols-1 row-cols-md-6 g-4">
           {api.map((curelem,index)=>{
             return(
                 <>
-                <div class="col row-desia" key={index}>
-            <div class="card row-desins h-100 w-6    0">
-              <div class="card-body">
-                <h5 class="card-title">{curelem.icon}</h5>
-                <p class="card-text">{curelem.text}</p>
+                <div className="col row-desia" key={index}>
+            <div className="card row-desins h-100 w-6    0">
+              <div className="card-body">
+                <h5 className="card-title">{curelem.icon}</h5>
+                <p className="card-text">{curelem.text}</p>
               </div>
             </div>
           </div>
