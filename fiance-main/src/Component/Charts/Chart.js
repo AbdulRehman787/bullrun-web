@@ -3,6 +3,7 @@ import './style.css'
 import ReChart from './ReChart'
 import IbmChart from './../StockApi/IbmChart';
 
+
 const Chart = () => {
   return (
     <div>
@@ -13,7 +14,7 @@ const Chart = () => {
           <IbmChart />
             </div>
           </div>
-          <div className="col sas">
+          <div className="col">
             <div className="card">
               <div className="card-bodyes">
                 <h5><i className="fa-solid fa-clock"></i> Watch List</h5>
@@ -21,18 +22,19 @@ const Chart = () => {
               </div>
             </div>
           </div>
-          <div className="col sas">
+          <div className="col">
             <div className="card">
 
               <div className="card-bodyes">
-                <h5><i className="fa-solid fa-eye"></i> My PotFolio</h5>
+                <h5><i className="fa-solid fa-clock"></i> My PotFolio</h5>
                 <ReChart />
               </div>
             </div>
           </div>
 
         </div>
-      </div></div>
+      </div>
+      </div>
 
 
   )

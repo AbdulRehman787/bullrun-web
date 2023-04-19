@@ -50,8 +50,7 @@ function Login(){
                 />
                 <InputControl label="Password" required name="password" type="password" placeholder="Enter Your Password"
                   onChange={event => setValues((prev) => ({ ...prev, password: event.target.value }))}
-                  />
-              
+                />
           <div className="footer">
           <b className='error'>{errmsg}</b>
             <button onClick={handleSubmit} 

@@ -68,10 +68,6 @@ class CoinCard extends React.Component {
             const volumeprice = document.getElementById('volumeprice')
             volumeprice.innerHTML = stockChartDValuesFunction
             console.log(stockChartDValuesFunction)
-
-
-
-
             break
           }
 
