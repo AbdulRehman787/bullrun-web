@@ -13,6 +13,7 @@ const RealData=[
 ]
 
 class IbmApi extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -84,7 +85,7 @@ class IbmApi extends React.Component {
     return (
       <div className='ibm'>
       <table className="table " >
-      <thead>
+      <thead className=''>
         <tr>
        {TheadApi.map((curelem,index)=>{
         return(

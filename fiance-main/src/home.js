@@ -15,7 +15,7 @@ const Home = () => {
         <MarketTrade />
       </div>
       <Routes>
-        <Route path="/home" element={<home />} /> 
+        <Route path="/home" element={<home />} />
       </Routes>
     </>
   )

@@ -8,13 +8,11 @@ import TeslaApi from './../StockApi/TeslaApi';
 import Neo from '../StockApi/Neo';
 import axios from 'axios';
 import CoinInfo from './../Pages/CoinInfo';
-
-
-
+ 
 const MarketTrade = () => {
   const [data, setData] = useState([])
   const [filters, setFilters] = useState(data)
-
+  
   useEffect(() => {
     axios.get('http://localhost:4500/register')
       .then(res => setData(res.data))
@@ -29,18 +27,18 @@ const MarketTrade = () => {
   return (
     <>
       <div className="marketTrade" >
-        <IbmApi onClick={() => filterItem("IBM")}  />
-        <DowApi onClick={() => filterItem("DOW")}   />
-        <GoodApi onClick={() => filterItem("GOOD")} />
-        <MsftApi onClick={() => filterItem("MSFT")} />
-        <TeslaApi onClick={() => filterItem("TESLA")} />
-        <Neo onClick={() => filterItem("NEO")} />
+        <IbmApi   onClick={()=> filterItem("IBM")}/>
+        <DowApi   onClick={()=> filterItem("DOW")} />
+        <GoodApi  onClick={()=> filterItem("GOOD")}/>
+        <MsftApi  onClick={()=> filterItem("MSFT")}/>
+        <Neo      onClick={()=> filterItem("NEO")}/>
+        <TeslaApi onClick={()=> filterItem("TESLA")}/>
       </div>
-
       <div className="coincont">
-  <CoinInfo filters={filters} /></div>
+      <CoinInfo filters={filters} />
+       </div>
     </>
   )
 }
 
-export default MarketTrade
+export default MarketTrade;

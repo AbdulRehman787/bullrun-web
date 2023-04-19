@@ -71,3 +71,12 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.css-cq0v9t {
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  height: 50px;
+  background: var(--chakra-colors-primary-400);
+  align-items: flex-start;
+}

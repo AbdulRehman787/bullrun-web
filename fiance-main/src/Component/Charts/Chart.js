@@ -26,7 +26,7 @@ const Chart = () => {
             <div className="card">
 
               <div className="card-bodyes">
-                <h5><i className="fa-solid fa-clock"></i> My PotFolio</h5>
+                <h5><i className="fa-solid fa-clock"></i> My Portfolio</h5>
                 <ReChart />
               </div>
             </div>
