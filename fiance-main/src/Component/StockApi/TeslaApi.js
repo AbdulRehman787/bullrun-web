@@ -94,7 +94,7 @@ class TeslaApi extends React.Component {
               return (
                 <>
                   <tr key={index}>
-                    <Link to='/Pages/PortFolio'>
+                    <Link to='/MarketTrade/TESLA'>
                       <td className="tds1">{curelem.name}</td>
                     </Link>
                     <td className="tds2">{curelem.date}</td>

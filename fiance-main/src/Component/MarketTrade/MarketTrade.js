@@ -6,18 +6,18 @@ import GoodApi from './../StockApi/GoodApi';
 import MsftApi from './../StockApi/MsftApi';
 import TeslaApi from './../StockApi/TeslaApi';
 import Neo from '../StockApi/Neo';
-import axios from 'axios';
+import axios from 'axios'
 import CoinInfo from '../Pages/CoinInfo';
 
 const MarketTrade = () => {
   const [data, setData] = useState([])
-  const [filters , setFilters] = useState(data)
-  
+  const [filters, setFilters] = useState(data)
+  console.log(data)
   useEffect(() => {
     axios.get('http://localhost:4500/register')
       .then(res => setData(res.data))
       .catch(err => console.log(err))
-  })
+  }, [])
   const filterItem = (category) => {
     const updatedValue = data.filter((curelem) => {
       return curelem.stockname === category;
@@ -27,16 +27,16 @@ const MarketTrade = () => {
   return (
     <>
       <div className="marketTrade" >
-        <IbmApi onClick={()=>filterItem("IBM")} />
-        <DowApi onClick={()=>filterItem("DOW")} />
-        <GoodApi onClick={()=>filterItem("GOOD")} />
-        <MsftApi onClick={()=>filterItem("MSFT")} />
-        <Neo onClick={()=>filterItem("NEO")} />
-        <TeslaApi onClick={()=>filterItem("TESLA")} />
+        <IbmApi onClick={() => filterItem("IBM")} />
+        <DowApi onClick={() => filterItem("DOW")} />
+        <GoodApi onClick={() => filterItem("GOOD")} />
+        <MsftApi onClick={() => filterItem("MSFT")} />
+        <Neo onClick={() => filterItem("NEO")} />
+        <TeslaApi onClick={() => filterItem("TESLA")} />
       </div>
 
       <div className='coincont'>
-      <CoinInfo filters={filters} />
+        <CoinInfo filters={filters} />
       </div>
     </>
   )

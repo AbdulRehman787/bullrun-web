@@ -13,6 +13,14 @@ import MainHome from "./Component/Pages/MainHome";
 import Home from "./Component/Pages/Home";
 import CoinInfo from "./Component/Pages/CoinInfo";
 import Homes from './website/Homes';
+import IBM from "./Component/MarketTrade/IBM";
+import Dow from "./Component/MarketTrade/Dow";
+import GOOD from './Component/MarketTrade/Good';
+import MSFT from './Component/MarketTrade/MSFT';
+import NEO from './Component/MarketTrade/NEO';
+import TESLA from './Component/MarketTrade/TESLA';
+
+
 
 const App =()=> {
   return (
@@ -32,6 +40,12 @@ const App =()=> {
     <Route path="/Pages/Home" element={<Home />}/>
     <Route path="/Pages/CoinInfo" element={<CoinInfo />}/>
     <Route path="/Pages/CoinInfo" element={<CoinInfo />}/>
+    <Route path="MarketTrade/IBM" element={<IBM />}/>
+    <Route path="MarketTrade/Dow" element={<Dow />}/>
+    <Route path="MarketTrade/GOOD" element={<GOOD />}/>
+    <Route path="MarketTrade/MSFT" element={<MSFT />}/>
+    <Route path="MarketTrade/NEO" element={<NEO />}/>
+    <Route path="MarketTrade/TESLA" element={<TESLA />}/>
     </Routes>
     </>
   );

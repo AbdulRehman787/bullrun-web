@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import TheadApi from '../MarketTrade/TheadApi'
+import IBM from '../MarketTrade/IBM';
 const date= new Date();
 const todayDate = date.toLocaleDateString()
-
 
 const RealData=[
     {
@@ -103,7 +103,7 @@ class IbmApi extends React.Component {
         return(
             <>
             <tr key={index}>
-            <Link to='/Pages/PortFolio' >
+            <Link to='/MarketTrade/IBM' >
             <td className="tds1">{curelem.name}</td>
             </Link> 
             <td className="tds2">{curelem.date}</td>

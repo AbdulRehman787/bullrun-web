@@ -1,11 +1,11 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import Navbar from '../SideNavbar/Navbar';
 import './style.css';
 import CoinCard from './CoinCard';
 import IBMChart from './IbmCharts';
 
 const CoinInfo = ({filters}) => {
-  
+
   return (
     <>
       <Navbar />
@@ -40,20 +40,20 @@ const CoinInfo = ({filters}) => {
             <th className='tip3'>Tips</th>
           </thead>
           <tbody>
-        
             {filters && filters.map((curelem) => {
-              return <>
+              return (
+                <>
                 <tr className='tipsrow' key={curelem.id}>
                   <td className='tips1text'>{curelem.stockname}</td>
                   {/*<td className='tips2text'>{curelem.date}</td>*/}
                   <td className='tips3text'>{curelem.tips}</td>
                 </tr>
               </>
+              )
             })}
           </tbody>
         </table>
       </div>
-
       </div>
     </>
   )

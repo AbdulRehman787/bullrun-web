@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link } from 'react-router-dom'
 import './style.css'
-
+import Dow from '../MarketTrade/Dow';
 
 const date= new Date();
 const todayDate = date.toLocaleDateString()
@@ -94,7 +94,7 @@ class DowApi extends React.Component {
         return(
             <>
             <tr key={index}>
-            <Link to='/Pages/PortFolio'>
+            <Link to='/MarketTrade/Dow'>
             <td className="tds1">{curelem.name}</td>
             </Link> 
             <td  className="tds2">{curelem.date}</td>
