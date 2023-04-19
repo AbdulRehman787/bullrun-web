@@ -1,0 +1,54 @@
+
+.card-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card-text {
+  margin-left: auto;
+}
+
+.card-body img {
+  width: auto;
+}
+
+.card-body {
+  margin: -10px;
+}
+.img {
+  height: 40px;
+}
+.card-img{
+  margin-left: auto;
+  height: 40px;
+}
+.lossprice {
+  font-size: 18px !important;
+
+}
+.rowsdes{
+  margin-left: 90px;
+}
+.card-titles{
+  margin-left: auto;
+}
+
+.card-conta{
+  border: 1px solid #ccc !important;
+}
+@media screen and (max-width: 800px) {
+  .rowsdes {
+    margin-left: 50px !important;
+  }
+}
+.div{
+  justify-content: space-between;
+}
+.rowsdes {
+  margin-right: 10px;
+  margin-left: 228px;
+}
+
+@media screen and (max-width: 1100px) {
+
+}

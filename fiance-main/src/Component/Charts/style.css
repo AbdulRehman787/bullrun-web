@@ -1,0 +1,77 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+.charts-con{
+    margin-left: 230px;
+    padding: 20px;
+}
+.ibm-chart{
+  margin-top: -10px;
+}
+.card-body h2{
+    margin-top: 05px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.fa-eye{
+    color: rgb(48,180,255);
+}
+.sas{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.search-container{
+display: flex;
+margin-bottom: 10px;
+justify-content: space-between;
+}
+.search-container button{
+  padding: 6px 16px;
+  border: none;
+  margin-left: 10px;
+}
+
+.SearchChart{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.stock-container{
+  height: 300px;
+  overflow: auto;
+  text-align: center;
+}
+.search{
+  margin: 0px 0px 20px 0px !important;
+  padding: 6px;
+}
+
+.scroll{
+  width: 20px;
+}
+@media screen and (max-width: 600px) {
+    .charts-con{
+      margin-left: 50px !important; 
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .charts-con{
+      margin-left: 120px ; 
+    }
+  }
+  
+.chart{
+  width: 400px;
+}
+
+.colorPrice
+{
+  color: green;
+  font-size: 44px;
+  font-weight: 500 !important;
+}
+
+.col{
+  margin: 10 auto;
+  
+}
+
