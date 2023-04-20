@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../SideNavbar/Navbar'
-import CoinCard from '../Pages/CoinCard'
-import IBMChart from '../Pages/IbmCharts'
 import axios from 'axios'
 import StockTip from './StockTip'
+import DowChart from './../StockApi/DowChart';
+import DowCoin from './DowCoin'
 
 const Dow = () => {
    const [values,setValues] =useState([])
@@ -32,21 +32,22 @@ const Dow = () => {
       <div className="col cols">
         <div className="card ">
           <div className="card-body">
-            <CoinCard />
+            <DowCoin />
           </div>
         </div>
       </div>
       <div className="col col-des">
         <div className="card">
           <div className="card-body">
-            <IBMChart/>
+            <DowChart />
           </div>
         </div>
       </div>
     </div>
 
     <div>
-    <button className='btns1' onClick={()=> filtersItem("DOW")}>Dow</button>
+    <button className='btns1' onClick={()=> filtersItem("DOW")}>Click This</button>
+    <p>Click this button you want to see tips</p>
     </div>
     <StockTip filters={filters} />
 </div>

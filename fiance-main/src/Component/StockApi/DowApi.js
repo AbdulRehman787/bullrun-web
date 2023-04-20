@@ -1,10 +1,9 @@
 import React from 'react';
-import {Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './style.css'
-import Dow from '../MarketTrade/Dow';
 
 const date= new Date();
-const todayDate = date.toLocaleDateString()
+const todayDate = date.toLocaleDateString();
 
 const RealData=[
     {

@@ -4,7 +4,7 @@ import CoinCard from '../Pages/CoinCard'
 import IBMChart from '../Pages/IbmCharts'
 import axios from 'axios'
 import StockTip from './StockTip'
-
+import IbmCoinCard from './IbmCoinCard'
 const IBM = () => {
     const [values,setValues] =useState([])
     const [filters,setFilters] = useState(values)

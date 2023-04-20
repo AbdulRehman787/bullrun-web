@@ -8,7 +8,6 @@ import TeslaApi from './../StockApi/TeslaApi';
 import Neo from '../StockApi/Neo';
 import axios from 'axios'
 import CoinInfo from '../Pages/CoinInfo';
-
 const MarketTrade = () => {
   const [data, setData] = useState([])
   const [filters, setFilters] = useState(data)

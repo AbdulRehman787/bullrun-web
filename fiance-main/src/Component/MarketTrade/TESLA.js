@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../SideNavbar/Navbar'
-import CoinCard from '../Pages/CoinCard'
-import IBMChart from '../Pages/IbmCharts'
 import axios from 'axios'
 import StockTip from './StockTip'
+import TeslaCoin from './TeslaCoin'
+import TeslaChart from './../StockApi/TeslaChart';
 
 const TESLA = () => {
   
@@ -32,14 +32,14 @@ const TESLA = () => {
       <div className="col cols">
         <div className="card ">
           <div className="card-body">
-            <CoinCard />
+            <TeslaCoin />
           </div>
         </div>
       </div>
       <div className="col col-des">
         <div className="card">
           <div className="card-body">
-            <IBMChart />
+            <TeslaChart />
           </div>
         </div>
       </div>

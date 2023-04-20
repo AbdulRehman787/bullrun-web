@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../SideNavbar/Navbar'
-import CoinCard from '../Pages/CoinCard'
-import IBMChart from '../Pages/IbmCharts'
 import axios from 'axios'
 import StockTip from './StockTip'
+import MsftChart from './../StockApi/MsftChart';
+import MSFTCoin from './MSFTCard'
 
 
 const MSFT = () => {
@@ -33,14 +33,14 @@ const MSFT = () => {
       <div className="col cols">
         <div className="card ">
           <div className="card-body">
-            <CoinCard />
+            <MSFTCoin />
           </div>
         </div>
       </div>
       <div className="col col-des">
         <div className="card">
           <div className="card-body">
-            <IBMChart/>
+            <MsftChart />
           </div>
         </div>
       </div>

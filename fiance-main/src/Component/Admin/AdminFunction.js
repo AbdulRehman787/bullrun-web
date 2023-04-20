@@ -32,10 +32,18 @@ const AdminFunction = () => {
                     </div>
 
                     <div className='add-tips'>
+                    <div>
                         <input type="date" className='date' onChange={event => setValues((prev) => ({ ...prev, date: event.target.value }))} />
-                        <textarea cols="48" rows="10" onChange={event => setValues((prev) => ({ ...prev, tips: event.target.value }))}  ></textarea>
-                        <button onClick={handleSubmit}   className='btns' >Add Tips</button>
                     </div>
+                    <div>
+                    <textarea cols="45" placeholder='Type Here...' className='tips-add' rows="10" onChange={event => setValues((prev) => ({ ...prev, tips: event.target.value }))}  ></textarea>
+                    
+                    </div>
+                    <div>
+                    <button onClick={handleSubmit}   className='btns1' >Add Tips</button>
+                    </div>
+                    </div>
+                        
                   
                 </div>
         </>

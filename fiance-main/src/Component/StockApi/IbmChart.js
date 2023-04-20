@@ -1,6 +1,5 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
-import Chart from "react-apexcharts";
 
 class IbmChart extends React.Component {
   constructor(props) {
@@ -58,9 +57,9 @@ class IbmChart extends React.Component {
               marker: {color: 'red'},
             }
           ]}
-          layout={{width: 350, height: 300}}
+          layout={{width: 750, height: 450}}
         />
-        <p className='chart-text'>IBM Charts</p>
+        <p className='tipsname'>IBM Chart</p>
       </div>
     )
   }

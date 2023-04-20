@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../SideNavbar/Navbar'
-import CoinCard from '../Pages/CoinCard'
-import IBMChart from '../Pages/IbmCharts'
+
 import axios from 'axios'
 import StockTip from './StockTip'
+import GoodChart from './../StockApi/GoodChart';
+import GoodCoin from './GoodCoin'
 
 
 const GOOD = () => {
@@ -33,14 +34,14 @@ const GOOD = () => {
       <div className="col cols">
         <div className="card ">
           <div className="card-body">
-            <CoinCard />
+            <GoodCoin />
           </div>
         </div>
       </div>
       <div className="col col-des">
         <div className="card">
           <div className="card-body">
-            <IBMChart/>
+          <GoodChart />
           </div>
         </div>
       </div>

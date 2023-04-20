@@ -1,6 +1,6 @@
 import React from 'react';
 
-class CoinCard extends React.Component {
+class GoodCoin extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,8 +19,8 @@ class CoinCard extends React.Component {
 
   fetchStock() {
     const pointerToThis = this;
-    const API_KEY = 'AO6XM6FG8JPYR4LH';
-    let StockSymbol = 'IBM';
+    const API_KEY = 'JOKHRI5PLTI53P21';
+    let StockSymbol = 'good';
     let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
@@ -92,13 +92,13 @@ class CoinCard extends React.Component {
           <h1 className='title' id='mainprice'></h1>
             <h2 id='profitprice'>+7.43 (0.43%)</h2>
             <h3 className='d-fle design'>Price <p className='dynnamicdata' id='price'></p> </h3><hr />
-            <h3 className='d-fle design'>Week <p className='dynnamicdata' id='price'>US$126.49 - US$126.9</p> </h3><hr />
-            <h3 className='d-fle design'>52 Week <p className='dynnamicdata' id='price'>US$133.72 - US$126.9</p> </h3><hr />
+            <h3 className='d-fle design'>Week <p className='dynnamicdata' id='price'>US$12.29 - US$12.39</p> </h3><hr />
+            <h3 className='d-fle design'>52 Week <p className='dynnamicdata' id='price'>US$18.72 - US$12.39</p> </h3><hr />
             <h3 className='d-fle design'>High Price <p className='dynnamicdata' id='highprice'></p> </h3><hr />
             <h3 className='d-fle design'>Low  Price<p className='dynnamicdata' id='lowprice'></p> </h3><hr />
             <h3 className='d-fle design'>Close Price <p className='dynnamicdata' id='closeprice'></p></h3><hr />
             <h3 className='d-fle design'>Volume <p className='dynnamicdata' >3856345</p> </h3><hr />
-            <h3 className='d-fle design'>Ceo <p className='dynnamicdata' >Arvind Krishna</p> </h3>
+            <h3 className='d-fle design'>Ceo <p className='dynnamicdata' >Ashleigh Ferran</p> </h3>
           </div>
         </div>
 
@@ -110,4 +110,4 @@ class CoinCard extends React.Component {
   }
 }
 
-export default CoinCard;
+export default GoodCoin;

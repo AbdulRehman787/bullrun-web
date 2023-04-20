@@ -4,6 +4,7 @@ import Plot from 'react-plotly.js';
 class GoodChart extends React.Component {
   constructor(props) {
     super(props);
+    
     this.state = {
       stockChartXValues: [],
       stockChartYValues: []
@@ -56,9 +57,9 @@ class GoodChart extends React.Component {
               marker: {color: 'red'},
             }
           ]}
-          layout={{width: 390, height: 400}}
+          layout={{width: 750, height: 450}}
         />
-        <p>GoodChart</p>
+        <p className='tipsname'>GOOD Chart</p>
       </div>
     )
   }

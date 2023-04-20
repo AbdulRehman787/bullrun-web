@@ -8,20 +8,33 @@
 }
 .add-tips{
     margin: 20px 0px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 120px;
+    margin-left: 90px;
     width: 88%;
 }
 .date{
-    margin: 0px 20px 0px -200px;
+    margin: 10px 25px 20px -200px;
     padding: 10px;
     border-radius: 5px;
-    border: 2px solid #fb503b;
-    color: #fb503b;
+    border: 2px solid #30b4ff;
+    margin-left: 10px;
+}
+.section-des{
+    border-radius: 5px;
+}
+.section-des:focus{
+    border-color: #9900ff;
+}
+.tips-add:focus{
+    border-color: #9900ff;
+
 }
 .add-tips input:focus{
+    border-color: #0000ff;
+}
+.date:focus{
     border-color: #9900ff;
 }
 .btns{
@@ -40,19 +53,32 @@
 textarea{
     padding: 5px;
 }
+.btns1{
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 800px) {
     .admin-container{
-        margin-left: 0px;
+        margin-left: 60px;
     }
-    .add-tips{
-        display: block;
-    }
+   
     .dropdown{
         margin: 0px auto;
     }
     .tips-container{
         margin-left: 75px;
     }
+    textarea{
+        height: 200px;
+
+    }
+     textarea:focus {
+        border-color: #9900ff;
+    }
+    .add-tips{
+        margin-left: 25px;
+    }
+    
 }
 
 .section-des{

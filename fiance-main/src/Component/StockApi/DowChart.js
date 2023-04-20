@@ -57,9 +57,9 @@ class DowChart extends React.Component {
               marker: {color: 'red'},
             }
           ]}
-          layout={{width: 390, height: 400}}
+          layout={{width: 750, height: 450}}
         />
-        <p>DowCharts</p>
+        <p className='tipsname'>DOW Chart</p>
       </div>
     )
   }

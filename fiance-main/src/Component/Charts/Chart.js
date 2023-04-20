@@ -1,8 +1,7 @@
 import React from 'react'
 import './style.css'
 import ReChart from './ReChart'
-import IbmChart from './../StockApi/IbmChart';
-
+import Ibmchart from './Ibmchart'
 
 const Chart = () => {
   return (
@@ -11,7 +10,7 @@ const Chart = () => {
         <div className="row row-cols-1 row-cols-md-3 g-4">
           <div className="col">
             <div className="card">
-          <IbmChart />
+          <Ibmchart />
             </div>
           </div>
           <div className="col">

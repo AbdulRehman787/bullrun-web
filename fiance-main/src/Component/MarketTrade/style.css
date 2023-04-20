@@ -89,7 +89,9 @@ input:checked + .slider{
 input:checked + .slider:before{
   transform: translateX(50px);
 }
-
+.col-des{
+  height: 550px;
+}
 .table{
   width: 90%;
   padding: 10px;

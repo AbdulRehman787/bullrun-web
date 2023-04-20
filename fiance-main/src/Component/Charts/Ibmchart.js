@@ -1,7 +1,7 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
 
-class MsftChart extends React.Component {
+class Ibmchart extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -9,13 +9,16 @@ class MsftChart extends React.Component {
       stockChartYValues: []
     }
   }
+
   componentDidMount() {
     this.fetchStock();
   }
-  fetchStock(){
+
+  fetchStock() {
     const pointerToThis = this;
-    const API_KEY = 'JOKHRI5PLTI53P21';
-    let StockSymbol = 'msft';
+    
+    const API_KEY = 'AO6XM6FG8JPYR4LH';
+    let StockSymbol = 'IBM';
     let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
@@ -40,6 +43,7 @@ class MsftChart extends React.Component {
         }
       )
   }
+
   render() {
     return (
       <div className='ibm'>
@@ -53,12 +57,12 @@ class MsftChart extends React.Component {
               marker: {color: 'red'},
             }
           ]}
-          layout={{width: 750, height: 450}}
-          />
-          <p className='tipsname'>MSFT Chart</p>
+          layout={{width: 350, height: 300}}
+        />
+        <p className='tipsname'>IBM Chart</p>
       </div>
     )
   }
 }
 
-export default MsftChart;
+export default Ibmchart;

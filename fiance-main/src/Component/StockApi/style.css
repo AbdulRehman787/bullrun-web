@@ -80,3 +80,6 @@ input:checked+.slider:before {
   background: var(--chakra-colors-primary-400);
   align-items: flex-start;
 }
+.tipsnam{
+  text-align: center;
+}

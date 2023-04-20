@@ -1,6 +1,6 @@
 import React from 'react';
 
-class CoinCard extends React.Component {
+class IbmCoinCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -110,4 +110,4 @@ class CoinCard extends React.Component {
   }
 }
 
-export default CoinCard;
+export default IbmCoinCard;
