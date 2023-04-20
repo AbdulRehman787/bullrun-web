@@ -116,3 +116,8 @@ input:checked + .slider:before{
 .coincont{
   display: none;
 }
+
+
+.btns1{
+  margin-top: 20px;
+}

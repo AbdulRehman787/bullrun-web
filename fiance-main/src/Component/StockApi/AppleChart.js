@@ -14,7 +14,6 @@ class AppleChart extends React.Component {
   }
   fetchStock() {
     const pointerToThis = this;
-    
     const API_KEY = 'JOKHRI5PLTI53P21';
     let StockSymbol = 'AAPL';
     let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
@@ -55,7 +54,7 @@ class AppleChart extends React.Component {
               marker: {color: 'red'},
             }
           ]}
-          layout={{width: 390, height: 400}}
+          layout={{width: 390, height: 400}}  
         />
         <p>AppleCharts</p>
       </div>

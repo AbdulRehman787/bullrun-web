@@ -1,29 +1,38 @@
-import React from 'react';
-import Plot from 'react-plotly.js';
+import React,{useEffect, useState} from 'react';
+import Chart from 'react-apexcharts'
+import axios from 'axios'
 
-class DowChart extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      stockChartXValues: [],
-      stockChartYValues: []
-    }
-  }
+const DowChart =()=> {
+  const [state, setState] = useState({
+    options: {
+     colors: ["#30b4ff" , "#FF9800"],
+      chart: {
+        id: "basic-bar",
+      },
+    },
+    series: [
+      {
+        stockChartXValues: [],
+        stockChartYValues: []
+      },
+    ],
+ 
+  });
 
-  componentDidMount() {
-    this.fetchStock();
-  }
-
-  fetchStock() {
-    const pointerToThis = this;
-    
+  useEffect(()=>{
+        fetchStock()
+  },[])
+ 
+  const fetchStock=()=> {
+   
     const API_KEY = 'JOKHRI5PLTI53P21';
     let StockSymbol = 'Dow';
     let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
 
-    fetch(API_Call)
+    
+    axios.get(API_Call)
       .then(
         function(response) {
           return response.json();
@@ -36,7 +45,7 @@ class DowChart extends React.Component {
             stockChartYValuesFunction.push(data['Time Series (Daily)'][key]['1. open']);
           }
           // console.log(stockChartXValuesFunction);
-          pointerToThis.setState({
+          setState({
             stockChartXValues: stockChartXValuesFunction,
             stockChartYValues: stockChartYValuesFunction
           });
@@ -44,25 +53,18 @@ class DowChart extends React.Component {
       )
   }
 
-  render() {
     return (
       <div className='ibm'>
-        <Plot
-          data={[
-            {
-              x: this.state.stockChartXValues,
-              y: this.state.stockChartYValues,
-              type: 'Bar',
-              mode: 'lines+markers',
-              marker: {color: 'red'},
-            }
-          ]}
-          layout={{width: 750, height: 450}}
-        />
-        <p className='tipsname'>DOW Chart</p>
+      <Chart
+      options={state.options}
+      series={state.series}
+        type="area"
+      width="750"
+      
+    />
+        <p className='tipsnam'>DOW Chart</p>
       </div>
     )
   }
-}
 
 export default DowChart;

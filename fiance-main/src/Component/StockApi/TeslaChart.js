@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import Chart from 'react-apexcharts'
 import axios from 'axios'
+
 const TeslaChart =()=> {
   const [state, setState] = useState({
     options: {
@@ -11,23 +12,54 @@ const TeslaChart =()=> {
     },
     series: [
       {
-        data: [30, 40, 45, 50, 49, 60, 70, 91],
+        stockChartXValues: [],
+        stockChartYValues: []
       },
     ],
+ 
   });
-useEffect(()=>{
-  axios.get('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=TSCO.LON&outputsize=compact&apikey=JOKHRI5PLTI53P21')
-  .then(res=>setState(res.data))
-  .catch(err=> console.log(err))
-  console.log(state)
-},[])
+
+  useEffect(()=>{
+        fetchStock()
+  },[])
+ 
+  const fetchStock=()=> {
+    const pointerToThis = this;
+    const API_KEY = 'JOKHRI5PLTI53P21';
+    let StockSymbol = 'TSCO.LOAN';
+    let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
+    let stockChartXValuesFunction = [];
+    let stockChartYValuesFunction = [];
+
+    axios.get(API_Call)
+      .then(
+        function(response) {
+          return response.json();
+        }
+      )
+      .then(
+        function(data) {
+          for (var key in data['Time Series (Daily)']) {
+            stockChartXValuesFunction.push(key);
+            stockChartYValuesFunction.push(data['Time Series (Daily)'][key]['1. open']);
+          }
+          // console.log(stockChartXValuesFunction);
+          pointerToThis.setState({
+            stockChartXValues: stockChartXValuesFunction,
+            stockChartYValues: stockChartYValuesFunction
+          });
+        }
+      )
+  }
+
     return (
       <div className='ibm'>
       <Chart
       options={state.options}
       series={state.series}
-      type="area"
+        type="area"
       width="750"
+      
     />
         <p className='tipsnam'>Tesla Chart</p>
       </div>

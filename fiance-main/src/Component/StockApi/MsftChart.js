@@ -1,18 +1,29 @@
-import React from 'react';
-import Plot from 'react-plotly.js';
+import React,{useEffect, useState} from 'react';
+import Chart from 'react-apexcharts'
+import axios from 'axios'
 
-class MsftChart extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      stockChartXValues: [],
-      stockChartYValues: []
-    }
-  }
-  componentDidMount() {
-    this.fetchStock();
-  }
-  fetchStock(){
+const MsftChart =()=> {
+  const [state, setState] = useState({
+    options: {
+     colors: ["#30b4ff" , "#FF9800"],
+      chart: {
+        id: "basic-bar",
+      },
+    },
+    series: [
+      {
+        stockChartXValues: [],
+        stockChartYValues: []
+      },
+    ],
+ 
+  });
+
+  useEffect(()=>{
+        fetchStock()
+  },[])
+ 
+  const fetchStock=()=> {
     const pointerToThis = this;
     const API_KEY = 'JOKHRI5PLTI53P21';
     let StockSymbol = 'msft';
@@ -20,7 +31,7 @@ class MsftChart extends React.Component {
     let stockChartXValuesFunction = [];
     let stockChartYValuesFunction = [];
 
-    fetch(API_Call)
+    axios.get(API_Call)
       .then(
         function(response) {
           return response.json();
@@ -40,25 +51,19 @@ class MsftChart extends React.Component {
         }
       )
   }
-  render() {
+
     return (
       <div className='ibm'>
-        <Plot
-          data={[
-            {
-              x: this.state.stockChartXValues,
-              y: this.state.stockChartYValues,
-              type: 'Bar',
-              mode: 'lines+markers',
-              marker: {color: 'red'},
-            }
-          ]}
-          layout={{width: 750, height: 450}}
-          />
-          <p className='tipsname'>MSFT Chart</p>
+      <Chart
+      options={state.options}
+      series={state.series}
+        type="area"
+      width="750"
+      
+    />
+        <p className='tipsnam'>MSFT Chart</p>
       </div>
     )
   }
-}
 
 export default MsftChart;

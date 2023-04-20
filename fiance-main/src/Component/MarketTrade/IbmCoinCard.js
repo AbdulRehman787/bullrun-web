@@ -98,6 +98,7 @@ class IbmCoinCard extends React.Component {
             <h3 className='d-fle design'>Low  Price<p className='dynnamicdata' id='lowprice'></p> </h3><hr />
             <h3 className='d-fle design'>Close Price <p className='dynnamicdata' id='closeprice'></p></h3><hr />
             <h3 className='d-fle design'>Volume <p className='dynnamicdata' >3856345</p> </h3><hr />
+            <h3 className='d-fle design'>Gross Margin <p className='dynnamicdata' >77.26%</p> </h3><hr />
             <h3 className='d-fle design'>Ceo <p className='dynnamicdata' >Arvind Krishna</p> </h3>
           </div>
         </div>

@@ -1,68 +1,37 @@
-import React from 'react';
-import Plot from 'react-plotly.js';
-
-class Ibmchart extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      stockChartXValues: [],
-      stockChartYValues: []
-    }
-  }
-
-  componentDidMount() {
-    this.fetchStock();
-  }
-
-  fetchStock() {
-    const pointerToThis = this;
-    
-    const API_KEY = 'AO6XM6FG8JPYR4LH';
-    let StockSymbol = 'IBM';
-    let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
-    let stockChartXValuesFunction = [];
-    let stockChartYValuesFunction = [];
-
-    fetch(API_Call)
-      .then(
-        function(response) {
-          return response.json();
-        }
-      )
-      .then(
-        function(data) {
-          for (var key in data['Time Series (Daily)']) {
-            stockChartXValuesFunction.push(key);
-            stockChartYValuesFunction.push(data['Time Series (Daily)'][key]['1. open']);
-          }
-          // console.log(stockChartXValuesFunction);
-          pointerToThis.setState({
-            stockChartXValues: stockChartXValuesFunction,
-            stockChartYValues: stockChartYValuesFunction
-          });
-        }
-      )
-  }
-
-  render() {
+import React,{useEffect, useState} from 'react';
+import Chart from 'react-apexcharts'
+import axios from 'axios'
+const Ibmchart =()=> {
+  const [state, setState] = useState({
+    options: {
+     colors: ["#30b4ff" , "#FF9800"],
+      chart: {
+        id: "basic-bar",
+      },
+    },
+    series: [
+      {
+        data: [30, 40, 45, 50, 49, 60, 70, 91],
+      },
+    ],
+  });
+useEffect(()=>{
+  axios.get('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=TSCO.LON&outputsize=compact&apikey=JOKHRI5PLTI53P21')
+  .then(res=>setState(res.data))
+  .catch(err=> console.log(err))
+  console.log(state)
+},[])
     return (
       <div className='ibm'>
-        <Plot
-          data={[
-            {
-              x: this.state.stockChartXValues,
-              y: this.state.stockChartYValues,
-              type: 'Bar',
-              mode: 'lines+markers',
-              marker: {color: 'red'},
-            }
-          ]}
-          layout={{width: 350, height: 300}}
-        />
-        <p className='tipsname'>IBM Chart</p>
+      <Chart
+      options={state.options}
+      series={state.series}
+      type="area"
+      width="350" height="320"
+    />
+        <p className='tipsnam'>IBM Chart</p>
       </div>
     )
   }
-}
 
 export default Ibmchart;

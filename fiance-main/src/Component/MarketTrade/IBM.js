@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../SideNavbar/Navbar'
 import CoinCard from '../Pages/CoinCard'
-import IBMChart from '../Pages/IbmCharts'
+import IbmChart from '../StockApi/IbmChart'
 import axios from 'axios'
 import StockTip from './StockTip'
 import IbmCoinCard from './IbmCoinCard'
@@ -32,14 +32,14 @@ const IBM = () => {
       <div className="col cols">
         <div className="card ">
           <div className="card-body">
-            <CoinCard />
+            <IbmCoinCard />
           </div>
         </div>
       </div>
       <div className="col col-des">
         <div className="card">
           <div className="card-body">
-            <IBMChart/>
+            <IbmChart/>
           </div>
         </div>
       </div>
