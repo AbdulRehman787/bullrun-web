@@ -6,6 +6,7 @@ import axios from 'axios'
 import StockTip from './StockTip'
 
 const TESLA = () => {
+  
    const [values,setValues] =useState([])
     const [filters,setFilters] = useState(values)
     useEffect(()=>{
@@ -17,9 +18,8 @@ const TESLA = () => {
         const updatedValue = values.filter((curelem)=>{
             return curelem.stockname === category
         })
-        setFilters(updatedValue)
+        setFilters(updatedValue)  
     }
-    
   return (
     <>
     <Navbar />
@@ -39,16 +39,18 @@ const TESLA = () => {
       <div className="col col-des">
         <div className="card">
           <div className="card-body">
-            <IBMChart/>
+            <IBMChart />
           </div>
         </div>
       </div>
     </div>
 
+    
     <div>
-    <button className='btns1' onClick={()=> filtersItem("TESLA")}>TESLA</button>
-    </div>
+    
+    <button className='btns1' onClick={()=> filtersItem("TESLA")}>CLICK THIS </button>
     <StockTip filters={filters} />
+    </div>
 </div>
    </>
   )

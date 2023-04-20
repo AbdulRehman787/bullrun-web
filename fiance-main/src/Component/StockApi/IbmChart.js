@@ -1,5 +1,6 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
+import Chart from "react-apexcharts";
 
 class IbmChart extends React.Component {
   constructor(props) {
